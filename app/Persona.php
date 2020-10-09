@@ -1,9 +1,10 @@
 <?php
 
 namespace App;
+use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Database\Eloquent\Model;
 
-class Persona extends Model
+class Persona extends Eloquent
 {
     public function getId()
     {
