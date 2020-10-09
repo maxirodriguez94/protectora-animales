@@ -29,3 +29,5 @@ error.log
 composer.phar
 bootstrap/cache/packages.php
 bootstrap/cache/services.php
+storage/
+
