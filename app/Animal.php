@@ -10,52 +10,63 @@ class Animal extends Model
     {
         return $this->id;
     }
+
     public function setNombre(string $nombre)
     {
-       $this->nombre = $nombre;
-    } 
-   
+        $this->nombre = $nombre;
+    }
+
     public function getNombre(): string
     {
         return $this->nombre;
     }
-   
-    public function setEdad(integer $edad)
+
+    public function setEdad(int $edad)
     {
         $this->edad = $edad;
-    }    
+    }
+
     public function getEdad(): int
     {
         return $this->edad;
     }
-    public function setTamaño(string $tamaño)
+
+    public function setTamanio(string $tamanio)
     {
-        $this->tamaño = $tamaño;
-    }    
-    public function getTamaño(): string
-    {
-        return $this->tamaño;
+        $this->tamanio = $tamanio;
     }
+
+    public function getTamanio(): string
+    {
+
+        return $this->tamanio;
+    }
+
     public function setRaza(string $raza)
     {
         $this->raza = $raza;
-    }    
+    }
+
     public function getRaza(): string
     {
         return $this->raza;
     }
+
     public function setDescripcion(string $descripcion)
     {
         $this->descripcion = $descripcion;
-    }    
+    }
+
     public function getDescripcion(): string
     {
         return $this->descripcion;
     }
+
     public function setFoto(string $foto)
     {
         $this->foto = $foto;
-    }    
+    }
+
     public function getFoto(): string
     {
         return $this->foto;

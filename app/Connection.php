@@ -8,12 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Connection extends Model
 {
-    public function person()
+    public function persona()
     {
         return $this->belongsTo(Persona::class);
     }
 
-    public function setPerson(Persona $persona)
+    public function setPersona(Persona $persona)
     {
         $this->persona()->associate($persona);
     }

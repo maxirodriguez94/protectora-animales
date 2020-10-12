@@ -6,23 +6,32 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateAnimalsTable extends Migration
 {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function up()
     {
-        Schema::create('animals', function (Blueprint $table) 
-        {
-            $table->id();
+        Schema::create('animals', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->string('nombre');
             $table->integer('edad');
-            $table->string('tamaño');
+            $table->string('tamanio');
             $table->string('raza');
             $table->text('descripcion');
-            $table->string('foto');            
+            $table->string('foto');
             $table->timestamps();
         });
     }
-    
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
-        Schema::drop('animals');
+        Schema::dropIfExists('animals');
     }
 }

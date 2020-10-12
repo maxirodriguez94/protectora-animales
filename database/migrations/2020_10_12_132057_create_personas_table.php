@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Personas extends Migration
+class CreatePersonasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class Personas extends Migration
     public function up()
     {
         Schema::create('personas', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('nombre');
             $table->integer('dni')->unique();
             $table->string('direccion');
