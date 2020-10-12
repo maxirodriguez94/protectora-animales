@@ -1,10 +1,10 @@
 <?php
 
 namespace App;
-use Illuminate\Auth\EloquentUserProvider;
+
 use Illuminate\Database\Eloquent\Model;
 
-class Persona extends Eloquent
+class Persona extends Model
 {
     public function getId()
     {
@@ -60,8 +60,4 @@ class Persona extends Eloquent
     {
         $this->localidad = $localidad;
     }
-
-
 }
-
-?>
