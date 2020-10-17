@@ -17,7 +17,7 @@ class CreatePersonaAction
         $persona->setDni($request->dni);
         $persona->setDireccion($request->direccion);
         $persona->setTelefono($request->telefono);
-        $persona->setLocalidad($request->localidad) ;
+        $persona->setLocalidad($request->localidad);
 
         $persona->save();
 
