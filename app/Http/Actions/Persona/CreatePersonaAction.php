@@ -18,7 +18,9 @@ class CreatePersonaAction
         $persona->setDireccion($request->direccion);
         $persona->setTelefono($request->telefono);
         $persona->setLocalidad($request->localidad);
+
         $persona->save();
+
         return response()->json([
             'status' => 'Ok',
             'message' => 'Persona creada con exito',
