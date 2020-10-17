@@ -1,6 +1,9 @@
 <?php
 
-use Illuminate\Http\Request;
+
+use App\Http\Actions\Animal\CreateAnimalAction;
+use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,3 +17,6 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/user', 'ShowUserListAction@run');
+
+
+Route::post('/animal','Animal\CreateAnimalAction');
