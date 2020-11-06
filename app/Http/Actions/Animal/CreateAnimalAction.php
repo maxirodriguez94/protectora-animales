@@ -12,7 +12,7 @@ class CreateAnimalAction
     {
         $animal = new Animal();
         $animal->setNombre($request->nombre);
-        $animal->setEdad((int)$request->edad);
+        $animal->setEdad((int) $request->edad);
         $animal->setTamanio($request->tamanio);
         $animal->setRaza($request->raza);
         $animal->setDescripcion($request->descripcion);

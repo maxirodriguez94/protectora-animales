@@ -14,7 +14,7 @@ class CreateAnimalActionTest extends TestCase
     {
         $response = $this->json('POST', '/api/animal',
             [
-                'nombre' => 'pipo',
+                'nombre' => 'Maxi',
                 'edad' => '21',
                 'tamanio' => 'grande',
                 'raza' => 'chiwawua',
