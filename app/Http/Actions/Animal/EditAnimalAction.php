@@ -1,28 +1,34 @@
 <?php
-declare(strict_types=1);
+
 
 namespace App\Http\Actions\Animal;
 
+
 use App\Animal;
+use App\Connection;
 use Illuminate\Http\Request;
 
-class CreateAnimalAction
+class EditAnimalAction
 {
-    public function __invoke(Request $request)
+    public function __invoke(int $id , Request $request)
     {
-        $animal = new Animal();
+
+        $animal = Animal::findOrfail($id);
         $animal->setNombre($request->nombre);
         $animal->setEdad((int)$request->edad);
         $animal->setTamanio($request->tamanio);
         $animal->setRaza($request->raza);
         $animal->setDescripcion($request->descripcion);
         $animal->setFoto($request->foto);
-
         $animal->save();
 
+        $connection = new Connection();
+        $connection->setType($request->type);
+        $connection->save();
+
         return response()->json([
-            'status' => 'Ok',
-            'message' => 'Animal creado con exito',
+            'status' => 'ok',
+            'message' => 'animal editado con exito'
         ]);
     }
 }
