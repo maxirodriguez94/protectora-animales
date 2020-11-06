@@ -13,8 +13,4 @@
 
 Route::get('/', function () {
     return view('welcome');
-
-Route::put('/personas/edit', 'EditPersonAction');
-
-
 });
