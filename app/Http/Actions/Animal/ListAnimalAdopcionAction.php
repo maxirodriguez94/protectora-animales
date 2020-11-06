@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Actions;
+namespace App\Http\Actions\Animal;
 
 
 use App\Connection;
