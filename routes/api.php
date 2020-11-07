@@ -9,8 +9,9 @@ Route::put('/animal/{id}/edit','Animal\EditAnimalAction');
 Route::get('/animal/delete','Animal\DeleteAnimalAction');
 Route::get('/animal/list/encontrados','Animal\ShowListFoundAnimalsAction');
 
+
 Route::post('/persona','Persona\CreatePersonaAction');
-Route::put('/persona/{id}/edit', 'Persona\EditPersonaAction');
+Route::put('/persona/{id}/edit','Persona\EditPersonaAction');
 
 
 
