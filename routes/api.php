@@ -14,3 +14,5 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/user', 'ShowUserListAction@run');
+
+Route::get('Animal/delete','DeleteAnimalAction');
