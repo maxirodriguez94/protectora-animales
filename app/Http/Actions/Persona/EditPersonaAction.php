@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Actions\Person;
+namespace App\Http\Actions\Persona;
 
 use App\Persona;
 use Illuminate\Http\Request;
 
 
-class EditPersonAction
+class EditPersonaAction
 {
     public function __invoke(Request $request, int $id)
     {
@@ -19,7 +19,7 @@ class EditPersonAction
                 'message' => 'La persona no se ha encontrado',
             ]);
         }
-        
+
         $persona->setNombre($request->nombre);
         $persona->setDni((int)$request->dni);
         $persona->setTelefono($request->telefono);
