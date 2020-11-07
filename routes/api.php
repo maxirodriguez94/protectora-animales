@@ -14,3 +14,4 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/user', 'ShowUserListAction@run');
+Route::put('/personas/edit', App\Http\Actions\Person\EditPersonAction::class);
