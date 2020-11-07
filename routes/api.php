@@ -13,6 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/user', 'ShowUserListAction@run');
+
 
 Route::get('/animales/lista-encontrados','ShowListFoundAnimals');
