@@ -12,7 +12,7 @@ class CreatePersonaActionTest extends TestCase
     use RefreshDatabase;
     public function testOk()
     {
-        $response = $this->json('POST', '/api/persona',
+        $response = $this->json('POST', '/api/persona/create',
             [
                 'nombre' => 'Maxi',
                 'dni' => '31313133',
