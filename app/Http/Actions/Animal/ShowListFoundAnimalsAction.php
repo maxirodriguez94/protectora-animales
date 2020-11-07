@@ -4,7 +4,7 @@ namespace App\Http\Actions\Animal;
 
 use App\Connection;
 
-class ShowListFoundAnimals
+class ShowListFoundAnimalsAction
 {
     public function __invoke()
     {

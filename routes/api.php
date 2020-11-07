@@ -15,4 +15,4 @@ use Illuminate\Http\Request;
 
 
 
-Route::get('/animales/lista-encontrados','ShowListFoundAnimals');
+Route::get('/animal/lista-encontrados','Animal\ShowListFoundAnimalsAction');
