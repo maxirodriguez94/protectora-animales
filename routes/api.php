@@ -8,7 +8,7 @@ Route::get('/animal/list/adopcion', 'Animal\ListAnimalAdopcionAction');
 Route::put('/animal/{id}/edit','Animal\EditAnimalAction');
 Route::get('/animal/delete','Animal\DeleteAnimalAction');
 Route::get('/animal/list/encontrados','Animal\ShowListFoundAnimalsAction');
-Route::get('/animal','ShowListAnimalAction');
+Route::get('/animal','Animal\ShowListAnimalAction');
 
 
 Route::post('/persona/create','Persona\CreatePersonaAction');
