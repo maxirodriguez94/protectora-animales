@@ -12,7 +12,7 @@ class CreateAnimalActionTest extends TestCase
     use RefreshDatabase;
     public function testOk()
     {
-        $response = $this->json('POST', '/api/animal',
+        $response = $this->json('POST', '/api/animal/create',
             [
                 'nombre' => 'pipo',
                 'edad' => '21',
