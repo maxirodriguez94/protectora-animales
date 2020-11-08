@@ -1,18 +1,17 @@
 <?php
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
+/*Animal */
+Route::post('/animal/create','Animal\CreateAnimalAction');
+Route::get('/animal/list/adopcion', 'Animal\ListAnimalAdopcionAction');
+Route::put('/animal/{id}/edit','Animal\EditAnimalAction');
+Route::get('/animal/delete','Animal\DeleteAnimalAction');
+Route::get('/animal/list/encontrados','Animal\ShowListFoundAnimalsAction');
+Route::get('/animal/list','Animal\ShowListAnimalAction');
 
-Route::get('/user', 'ShowUserListAction@run');
-
-Route::get('/persona/List','Persona/ShowListPersonAction');
+/*Persona*/
+Route::post('/persona/create','Persona\CreatePersonaAction');
+Route::delete('/persona/delete/{id}','Persona\DeletePersonaAction');
+Route::put('/persona/{id}/edit','Persona\EditPersonaAction');
+Route::get('/persona/list','Persona\ShowListPersonAction');
