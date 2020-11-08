@@ -8,3 +8,5 @@ Route::post('/animal','Animal\CreateAnimalAction');
 Route::put('/animal/{id}/edit','Animal\EditAnimalAction');
 
 Route::post('/persona','Persona\CreatePersonaAction');
+
+Route::get('/persona','ShowListPersonAction');
