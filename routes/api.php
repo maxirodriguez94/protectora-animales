@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('/animal/create','Animal\CreateAnimalAction');
 Route::get('/animal/list/adopcion', 'Animal\ListAnimalAdopcionAction');
 Route::put('/animal/{id}/edit','Animal\EditAnimalAction');
-Route::get('/animal/delete','Animal\DeleteAnimalAction');
+Route::get('/animal/delete/{id}','Animal\DeleteAnimalAction');
 Route::get('/animal/list/encontrados','Animal\ShowListFoundAnimalsAction');
 Route::get('/animal/list','Animal\ShowListAnimalAction');
 
